@@ -1,205 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arpita Jena – Portfolio</title>
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-nkuNwzPBdHZoP9txa1Onh9KOG+e71ecmQ0pOM9ce4HdaGV7xou1rU/tNrA8A+FOi+UqxwK3lULjJo3X3lXp3gA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script defer src="app.js"></script>
-  </head>
-  <body>
-    <!-- ===================== NAVBAR ===================== -->
-    <header class="navbar shadow-sm">
-      <div class="container flex justify-between items-center py-8">
-        <a href="#home" class="logo h5 font-bold">Arpita Jena</a>
-        <nav>
-          <ul class="nav-links flex gap-16">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#achievements" class="nav-link">Achievements</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arpita Jena | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container flex justify-between items-center py-16">
+      <h1 class="logo">Arpita Jena</h1>
+      <nav aria-label="Primary" class="nav">
+        <ul class="nav__list flex gap-16">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
+          <li><a href="#achievements" class="nav__link">Achievements</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero flex items-center justify-center" aria-label="Hero">
+      <div class="container flex flex-col items-center text-center gap-16">
+        <h2 class="hero__title">Hi, I'm <span class="highlight">Arpita Jena</span></h2>
+        <h3 class="hero__tagline" aria-live="polite">CSIT Student & Full-Stack Developer</h3>
+        <a href="#contact" class="btn btn--primary">Get in Touch</a>
+      </div>
+      <!-- Animated shapes -->
+      <div class="shape shape--one" aria-hidden="true"></div>
+      <div class="shape shape--two" aria-hidden="true"></div>
+      <div class="shape shape--three" aria-hidden="true"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-1" aria-label="About">
+      <div class="container grid about-grid gap-16">
+        <div>
+          <h2 class="section-title">About Me</h2>
+          <p>Hi, I'm Arpita Jena—a final-year CSIT student at GITA Autonomous College with a passion for full-stack development, data engineering, and building impactful experiences. When I'm not coding, you can find me mentoring juniors, coordinating college cultural fests, or volunteering for community service.</p>
+        </div>
+        <aside class="about-aside">
+          <h3 class="sr-only">Contact Details</h3>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:jenaarpi2004@gmail.com">jenaarpi2004@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+918260523656">+91 8260523656</a></li>
+            <li><strong>Location:</strong> Bhubaneswar, India</li>
           </ul>
-        </nav>
+          <h3 class="sr-only">Social Links</h3>
+          <ul class="social-links flex gap-8 mt-8">
+            <li><a href="https://www.linkedin.com/in/arpita-jena/" target="_blank" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/arpita-jena/" target="_blank" aria-label="GitHub">GitHub</a></li>
+            <li><a href="https://www.instagram.com/arpita_jena_02/" target="_blank" aria-label="Instagram">Instagram</a></li>
+          </ul>
+        </aside>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- ===================== HERO ===================== -->
-      <section id="home" class="section hero flex justify-center items-center">
-        <div
-          class="hero-content flex flex-col items-center text-center gap-16"
-          style="max-width: 700px"
-        >
-          <!-- Updated local asset path for portrait -->
-          <img
-            src="assets/Arpita1.jpg"
-            alt="Arpita Jena portrait in pastel style"
-            class="portrait-img"
-            loading="lazy"
-          />
-          <h1 class="m-0" id="heroName">Arpita Jena</h1>
-          <h2 class="tagline font-weight-normal" id="heroTagline"></h2>
-          <div class="flex gap-8">
-            <a id="resumeLink" href="#" target="_blank" class="btn btn--primary"
-              >Download Resume</a
-            >
-            <a href="#contact" class="btn btn--outline">Contact Me</a>
-          </div>
-          <!-- Social Icons -->
-          <div id="social-links" class="social-links flex gap-16 mt-16"></div>
-        </div>
-      </section>
-
-      <!-- ===================== ABOUT ===================== -->
-      <section id="about" class="section about">
-        <div class="container about-grid gap-16">
-          <div class="about-text"></div>
-          <div class="illustration"></div>
-        </div>
-      </section>
-
-      <!-- ===================== SKILLS ===================== -->
-      <section id="skills" class="section skills">
-        <div class="container">
-          <h2 class="mb-16">Skills</h2>
-          <div id="skills-grid" class="skills-grid"></div>
-        </div>
-      </section>
-
-      <!-- ===================== PROJECTS ===================== -->
-      <section id="projects" class="section projects">
-        <div class="container">
-          <h2 class="mb-16">Projects</h2>
-          <div id="projects-grid" class="projects-grid"></div>
-        </div>
-      </section>
-
-      <!-- ===================== EXPERIENCE ===================== -->
-      <section id="experience" class="section experience">
-        <div class="container">
-          <h2 class="mb-16">Experience</h2>
-          <div id="experience-timeline" class="timeline"></div>
-        </div>
-      </section>
-
-      <!-- ===================== ACHIEVEMENTS ===================== -->
-      <section id="achievements" class="section achievements">
-        <div class="container">
-          <h2 class="mb-16">Achievements & Activities</h2>
-          <div
-            class="achievements-wrapper grid gap-16"
-            style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))"
-          >
-            <div>
-              <h3 class="mb-8">Achievements</h3>
-              <ul id="achievements-list" class="list"></ul>
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-2" aria-label="Skills">
+      <div class="container">
+        <h2 class="section-title text-center mb-8">Skills</h2>
+        <div class="skills-grid">
+          <!-- Languages Card -->
+          <div class="skill-card">
+            <div class="card-face card-front flex items-center justify-center">
+              <h3>Languages</h3>
             </div>
-            <div>
-              <h3 class="mb-8">Activities</h3>
-              <ul id="activities-list" class="list"></ul>
+            <div class="card-face card-back">
+              <p>Proficient in multiple programming languages with strong problem-solving abilities</p>
+              <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>SQL (PostgreSQL)</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- ===================== EDUCATION ===================== -->
-      <section id="education" class="section education">
-        <div class="container">
-          <h2 class="mb-16">Education</h2>
-          <div id="education-timeline" class="timeline"></div>
-        </div>
-      </section>
-
-      <!-- ===================== CONTACT ===================== -->
-      <section id="contact" class="section contact">
-        <div class="container">
-          <h2 class="mb-16 text-center">Contact</h2>
-          <div class="contact-card card">
-            <div class="card__body">
-              <p class="mb-16 text-center">
-                Feel free to reach out through the form below or via LinkedIn.
-              </p>
-              <form id="contactForm" class="flex flex-col gap-16" novalidate>
-                <div class="form-group">
-                  <label for="name" class="form-label">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="form-control"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-control"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    class="form-control"
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn--primary btn--full-width">
-                  Send
-                </button>
-              </form>
-              <div class="contact-links flex justify-center gap-16 mt-16">
-                <a href="mailto:jenaarpi2004@gmail.com" class="btn btn--outline"
-                  >Email</a
-                >
-                <a
-                  href="https://www.linkedin.com/in/arpita-jena/"
-                  class="btn btn--outline"
-                  target="_blank"
-                  >LinkedIn</a
-                >
-              </div>
+          <!-- Frameworks Card -->
+          <div class="skill-card">
+            <div class="card-face card-front flex items-center justify-center">
+              <h3>Frameworks</h3>
+            </div>
+            <div class="card-face card-back">
+              <p>Experience building modern web applications with popular frameworks</p>
+              <ul>
+                <li>React</li>
+                <li>Node.js</li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
 
-    <!-- ===================== FOOTER ===================== -->
-    <footer class="footer py-16">
-      <div class="container flex justify-between items-center">
-        <p class="m-0">&copy; <span id="year"></span> Arpita Jena</p>
-        <div class="flex gap-16">
-          <a href="https://github.com/arpitajena" target="_blank" aria-label="GitHub"
-            ><i class="fab fa-github fa-lg"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/arpita-jena/"
-            target="_blank"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin fa-lg"></i
-          ></a>
+          <!-- Dev Tools Card -->
+          <div class="skill-card">
+            <div class="card-face card-front flex items-center justify-center">
+              <h3>Developer Tools</h3>
+            </div>
+            <div class="card-face card-back">
+              <p>Familiar with industry-standard development environments and cloud platforms</p>
+              <ul>
+                <li>Google Cloud Platform</li>
+                <li>VS Code</li>
+                <li>PyCharm</li>
+                <li>IntelliJ</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Libraries Card -->
+          <div class="skill-card">
+            <div class="card-face card-front flex items-center justify-center">
+              <h3>Libraries</h3>
+            </div>
+            <div class="card-face card-back">
+              <p>Data analysis and visualization expertise using Python libraries</p>
+              <ul>
+                <li>pandas</li>
+                <li>NumPy</li>
+                <li>Matplotlib</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-3" aria-label="Projects">
+      <div class="container">
+        <h2 class="section-title text-center mb-8">Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-modal-target="modal-project-1">
+            <h3>Web Scraping & Sentiment Analysis</h3>
+            <p class="project-tech">Python · PostgreSQL · Scrapy</p>
+          </article>
+          <!-- Project 2 -->
+          <article class="project-card" data-modal-target="modal-project-2">
+            <h3>Chat Application</h3>
+            <p class="project-tech">MERN · Socket.IO · Chakra UI</p>
+          </article>
+          <!-- Project 3 -->
+          <article class="project-card" data-modal-target="modal-project-3">
+            <h3>Library Management System</h3>
+            <p class="project-tech">Java · Swing · MySQL</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-4" aria-label="Experience">
+      <div class="container">
+        <h2 class="section-title text-center mb-8">Experience</h2>
+        <ul class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+              <h3>Intern — Hindustan Aeronautics Limited</h3>
+              <span class="timeline-period">May–Jun 2024</span>
+              <p>Built CSV-to-PostgreSQL import using Drizzle-ORM; improved migration performance.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-5" aria-label="Education">
+      <div class="container">
+        <h2 class="section-title text-center mb-8">Education</h2>
+        <ul class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+              <h3>B.Tech CSIT — GITA Autonomous College</h3>
+              <span class="timeline-period">2021–2025</span>
+              <p>GPA: 8.82</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+              <h3>CHSE — Saraswati Shisu Vidya Mandir</h3>
+              <span class="timeline-period">2019–2021</span>
+              <p>Score: 75%</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-point"></div>
+            <div class="timeline-content">
+              <h3>BSE — Sri Aurobindo Purnanga Shiksha Kendra</h3>
+              <span class="timeline-period">2018–2019</span>
+              <p>Score: 73%</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section bg-6" aria-label="Achievements">
+      <div class="container text-center">
+        <h2 class="section-title mb-8">Achievements</h2>
+        <div class="achievements-grid flex justify-center gap-16">
+          <div class="achievement-counter" data-count="2">
+            <span class="counter-value">0</span>
+            <p>Certifications</p>
+          </div>
+          <div class="achievement-counter" data-count="10">
+            <span class="counter-value">0</span>
+            <p>Events Coordinated</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-7" aria-label="Contact">
+      <div class="container">
+        <h2 class="section-title text-center mb-8">Contact Me</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-control" required aria-required="true" />
+            <p class="form-error hidden" id="error-name">Please enter your name.</p>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required aria-required="true" />
+            <p class="form-error hidden" id="error-email">Please enter a valid email.</p>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" rows="5" class="form-control" required aria-required="true"></textarea>
+            <p class="form-error hidden" id="error-message">Please enter a message.</p>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p id="form-success" class="status status--success hidden mt-8" role="status">Message sent successfully!</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-16 text-center">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Arpita Jena. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modals for Projects -->
+  <div id="modal-overlay" class="modal-overlay hidden" tabindex="-1" aria-hidden="true"></div>
+
+  <div id="modal-project-1" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title-1">
+    <div class="modal__content">
+      <button class="modal__close" data-close aria-label="Close">&times;</button>
+      <h3 id="modal-title-1">Web Scraping & Sentiment Analysis</h3>
+      <p>Pipeline to extract posts, store in PostgreSQL, and run sentiment analysis for actionable insights.</p>
+      <p><strong>Technologies:</strong> Python, PostgreSQL, Scrapy</p>
+    </div>
+  </div>
+
+  <div id="modal-project-2" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title-2">
+    <div class="modal__content">
+      <button class="modal__close" data-close aria-label="Close">&times;</button>
+      <h3 id="modal-title-2">Chat Application</h3>
+      <p>Real-time chat with authentication, group and individual messaging, and live updates.</p>
+      <p><strong>Technologies:</strong> MERN, Socket.IO, Chakra UI</p>
+    </div>
+  </div>
+
+  <div id="modal-project-3" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title-3">
+    <div class="modal__content">
+      <button class="modal__close" data-close aria-label="Close">&times;</button>
+      <h3 id="modal-title-3">Library Management System</h3>
+      <p>Desktop GUI for book catalog, user management, and transactions.</p>
+      <p><strong>Technologies:</strong> Java, Swing, MySQL</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
 </html>
