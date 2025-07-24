@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arpita Jena – Portfolio</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-nkuNwzPBdHZoP9txa1Onh9KOG+e71ecmQ0pOM9ce4HdaGV7xou1rU/tNrA8A+FOi+UqxwK3lULjJo3X3lXp3gA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar shadow-sm">
+      <div class="container flex justify-between items-center py-8">
+        <a href="#home" class="logo h5 font-bold">Arpita Jena</a>
+        <nav>
+          <ul class="nav-links flex gap-16">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================== HERO ===================== -->
+      <section id="home" class="section hero flex justify-center items-center">
+        <div
+          class="hero-content flex flex-col items-center text-center gap-16"
+          style="max-width: 700px"
+        >
+          <!-- Updated local asset path for portrait -->
+          <img
+            src="assets/Arpita1.jpg"
+            alt="Arpita Jena portrait in pastel style"
+            class="portrait-img"
+            loading="lazy"
+          />
+          <h1 class="m-0" id="heroName">Arpita Jena</h1>
+          <h2 class="tagline font-weight-normal" id="heroTagline"></h2>
+          <div class="flex gap-8">
+            <a id="resumeLink" href="#" target="_blank" class="btn btn--primary"
+              >Download Resume</a
+            >
+            <a href="#contact" class="btn btn--outline">Contact Me</a>
+          </div>
+          <!-- Social Icons -->
+          <div id="social-links" class="social-links flex gap-16 mt-16"></div>
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section id="about" class="section about">
+        <div class="container about-grid gap-16">
+          <div class="about-text"></div>
+          <div class="illustration"></div>
+        </div>
+      </section>
+
+      <!-- ===================== SKILLS ===================== -->
+      <section id="skills" class="section skills">
+        <div class="container">
+          <h2 class="mb-16">Skills</h2>
+          <div id="skills-grid" class="skills-grid"></div>
+        </div>
+      </section>
+
+      <!-- ===================== PROJECTS ===================== -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="mb-16">Projects</h2>
+          <div id="projects-grid" class="projects-grid"></div>
+        </div>
+      </section>
+
+      <!-- ===================== EXPERIENCE ===================== -->
+      <section id="experience" class="section experience">
+        <div class="container">
+          <h2 class="mb-16">Experience</h2>
+          <div id="experience-timeline" class="timeline"></div>
+        </div>
+      </section>
+
+      <!-- ===================== ACHIEVEMENTS ===================== -->
+      <section id="achievements" class="section achievements">
+        <div class="container">
+          <h2 class="mb-16">Achievements & Activities</h2>
+          <div
+            class="achievements-wrapper grid gap-16"
+            style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))"
+          >
+            <div>
+              <h3 class="mb-8">Achievements</h3>
+              <ul id="achievements-list" class="list"></ul>
+            </div>
+            <div>
+              <h3 class="mb-8">Activities</h3>
+              <ul id="activities-list" class="list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== EDUCATION ===================== -->
+      <section id="education" class="section education">
+        <div class="container">
+          <h2 class="mb-16">Education</h2>
+          <div id="education-timeline" class="timeline"></div>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="mb-16 text-center">Contact</h2>
+          <div class="contact-card card">
+            <div class="card__body">
+              <p class="mb-16 text-center">
+                Feel free to reach out through the form below or via LinkedIn.
+              </p>
+              <form id="contactForm" class="flex flex-col gap-16" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">
+                  Send
+                </button>
+              </form>
+              <div class="contact-links flex justify-center gap-16 mt-16">
+                <a href="mailto:jenaarpi2004@gmail.com" class="btn btn--outline"
+                  >Email</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/arpita-jena/"
+                  class="btn btn--outline"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer py-16">
+      <div class="container flex justify-between items-center">
+        <p class="m-0">&copy; <span id="year"></span> Arpita Jena</p>
+        <div class="flex gap-16">
+          <a href="https://github.com/arpitajena" target="_blank" aria-label="GitHub"
+            ><i class="fab fa-github fa-lg"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/arpita-jena/"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin fa-lg"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
