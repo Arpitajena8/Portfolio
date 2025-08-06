@@ -1,185 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Arpita Jena | Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display&family=Dancing+Script&display=swap" rel="stylesheet" />
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Favicon (optional) -->
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpita Jena - Portfolio ð¾</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Fredoka+One:wght@400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar" id="navbar" aria-label="Primary Navigation">
-        <div class="logo">
-            <span class="logo-script">Arpita Jena 🐱🐕</span>
+    <!-- Paw Print Trail -->
+    <div class="paw-trail" id="paw-trail"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Arpita Jena ð¾</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home ð </a>
+                <a href="#about" class="nav-link">About ð±</a>
+                <a href="#skills" class="nav-link">Skills ð</a>
+                <a href="#projects" class="nav-link">Projects ð»</a>
+                <a href="#experience" class="nav-link">Experience ð</a>
+                <a href="#contact" class="nav-link">Contact ð§</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">ð</span>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </div>
         </div>
-        <nav>
-            <ul id="nav-links" class="nav-links">
-                <li><a href="#home" class="nav-link active" aria-current="page">Home 🐾</a></li>
-                <li><a href="#about" class="nav-link">About Me 🐱</a></li>
-                <li><a href="#skills" class="nav-link">Skills 🐕</a></li>
-                <li><a href="#projects" class="nav-link">Projects 🐾</a></li>
-                <li><a href="#contact" class="nav-link">Contact 🐱</a></li>
-            </ul>
-        </nav>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle dark/light theme">🐕</button>
-        <button id="hamburger" class="hamburger" aria-label="Toggle navigation menu" aria-controls="nav-links" aria-expanded="false">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-    </header>
+    </nav>
 
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="section hero-section" tabindex="-1" aria-label="Home Section">
-            <div class="hero-content">
-                <h1 class="hero-name">Hi, I’m <span class="script-font">Arpita Jena</span> 🐱</h1>
-                <p class="hero-tagline">Java Full Stack Developer | Problem Solver | Tech Enthusiast</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn-primary">View My Projects</a>
-                    <a href="#contact" class="btn-secondary">Contact Me</a>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="floating-paws">
+            <div class="paw-print paw-1">ð¾</div>
+            <div class="paw-print paw-2">ð¾</div>
+            <div class="paw-print paw-3">ð¾</div>
+            <div class="paw-print paw-4">ð¾</div>
+            <div class="paw-print paw-5">ð¾</div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-greeting">Hi, I'm Arpita Jena ð±</h1>
+                <p class="hero-tagline">Java Full Stack Developer | Problem Solver | Tech Enthusiast ð</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn--primary hero-cta">View My Paw-some Projects ð¾</a>
+                    <a href="#contact" class="btn btn--secondary hero-cta">Let's Connect! ð¤</a>
                 </div>
             </div>
-            <div class="paw-print-container" aria-hidden="true"></div>
-        </section>
+            <div class="hero-animals">
+                <div class="cat-silhouette">ð±</div>
+                <div class="dog-silhouette">ð</div>
+            </div>
+        </div>
+    </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="section about-section" tabindex="-1" aria-label="About Me Section">
-            <h2>About Me 🐱</h2>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me ð¾</h2>
             <div class="about-content">
-                <img src="profile-placeholder.jpg" alt="Arpita Jena profile photo" class="profile-img" />
+                <div class="about-photo">
+                    <div class="photo-placeholder">
+                        <span class="photo-icon">ð©âð»</span>
+                        <div class="paw-border">ð¾</div>
+                    </div>
+                </div>
                 <div class="about-text">
-                    <p>I am a passionate and detail-oriented Java Full Stack Developer with a strong foundation in backend and frontend technologies. Like a loyal dog, I'm dedicated to my craft, and like a curious cat, I'm always exploring new technologies.</p>
-                    <p>I've worked on impactful projects involving Spring Boot, SQL, web scraping, and sentiment analysis, and I’m always eager to learn and participate in hackathons and workshops that challenge my creativity.</p>
-                    <ul class="quick-facts">
-                        <li>🎓 Bachelor of Technology in Computer Science</li>
-                        <li>💻 Tools I use: IntelliJ, GitHub, Postman, VS Code</li>
-                        <li>🧠 Always exploring: Spring Security, React, REST APIs</li>
-                    </ul>
+                    <p class="about-bio">I am a passionate and detail-oriented Java Full Stack Developer with a strong foundation in backend and frontend technologies. Like a loyal dog ð, I'm dedicated to my craft, and like a curious cat ð±, I'm always exploring new technologies. I've worked on impactful projects involving Spring Boot, SQL, web scraping, and sentiment analysis.</p>
+                    <p class="about-bio">I'm always curious to learn, explore new tools, and participate in hackathons and workshops that challenge my creativity - just like a cat investigating every corner! ðµï¸ââï¸</p>
+                    <div class="quick-facts">
+                        <h3>Quick Facts ð</h3>
+                        <ul class="facts-list">
+                            <li><span class="fact-icon">ð</span> Bachelor of Technology in Computer Science</li>
+                            <li><span class="fact-icon">ð»</span> Tools I use: IntelliJ, GitHub, Postman, VS Code</li>
+                            <li><span class="fact-icon">ð§ </span> Always exploring: Spring Security, React, REST APIs</li>
+                            <li><span class="fact-icon">ð±</span> Fun fact: I debug code as persistently as a cat chasing a laser pointer!</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section skills-section" tabindex="-1" aria-label="Skills Section">
-            <h2>Skills 🐕</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">My Tech Pack ðâð¦º</h2>
+            <p class="section-subtitle">Like a well-trained service dog, I've mastered these technologies with dedication! ð¾</p>
             <div class="skills-grid">
-                <!-- Languages & Technologies -->
                 <div class="skill-category">
-                    <h3>Languages & Technologies</h3>
-                    <div class="skill-badges">
-                        <span class="skill-badge">Java</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">HTML</span>
-                        <span class="skill-badge">CSS</span>
-                        <span class="skill-badge">Spring Boot</span>
-                        <span class="skill-badge">Spring MVC</span>
-                        <span class="skill-badge">SQL</span>
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">PostgreSQL</span>
-                        <span class="skill-badge">RESTful APIs</span>
-                        <span class="skill-badge">JSON</span>
-                        <span class="skill-badge">Git & GitHub</span>
-                        <span class="skill-badge">Python</span>
+                    <h3 class="skill-category-title">
+                        <span class="category-icon">ð±âð»</span>
+                        Languages & Technologies
+                    </h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Java â</span>
+                        <span class="skill-tag">JavaScript ð¨</span>
+                        <span class="skill-tag">HTML ð</span>
+                        <span class="skill-tag">CSS ð¨</span>
+                        <span class="skill-tag">Spring Boot ð</span>
+                        <span class="skill-tag">Spring MVC ðï¸</span>
+                        <span class="skill-tag">SQL ðï¸</span>
+                        <span class="skill-tag">MySQL ð¬</span>
+                        <span class="skill-tag">PostgreSQL ð</span>
+                        <span class="skill-tag">RESTful APIs ð</span>
+                        <span class="skill-tag">JSON ð</span>
+                        <span class="skill-tag">Git & GitHub ð</span>
+                        <span class="skill-tag">Python ð</span>
                     </div>
                 </div>
-                <!-- Tools & Platforms -->
                 <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skill-badges">
-                        <span class="skill-badge">IntelliJ IDEA</span>
-                        <span class="skill-badge">Eclipse</span>
-                        <span class="skill-badge">GitHub</span>
-                        <span class="skill-badge">Postman</span>
-                        <span class="skill-badge">Oracle SQL</span>
-                        <span class="skill-badge">VS Code</span>
+                    <h3 class="skill-category-title">
+                        <span class="category-icon">ð ï¸</span>
+                        Tools & Platforms
+                    </h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">IntelliJ IDEA ð¡</span>
+                        <span class="skill-tag">Eclipse ð</span>
+                        <span class="skill-tag">GitHub ð±</span>
+                        <span class="skill-tag">Postman ð®</span>
+                        <span class="skill-tag">Oracle SQL ð®</span>
+                        <span class="skill-tag">VS Code ð</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section projects-section" tabindex="-1" aria-label="Projects Section">
-            <h2>Projects 🐾</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Project Den ð </h2>
+            <p class="section-subtitle">Projects crafted with the precision of a cat and the loyalty of a dog! ð¾</p>
             <div class="projects-grid">
-                <article class="project-card" tabindex="0" aria-labelledby="project1-title">
-                    <h3 id="project1-title">Web Scraping & Sentiment Analysis 🐱</h3>
-                    <p>Like a hunting hound, this solution tracks down user opinions from GitHub repositories by scraping and analyzing sentiment with Python, Scrapy, and PostgreSQL.</p>
-                    <p><strong>Tech Used:</strong> Python, Scrapy, PostgreSQL</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener" aria-label="GitHub Repository for Web Scraping project">GitHub</a>
-                        <a href="#" target="_blank" rel="noopener" aria-label="Live Demo for Web Scraping project">Live Demo</a>
+                <div class="project-card">
+                    <div class="project-icon">ðâð¦º</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web Scraping & Sentiment Analysis ðâð¦º</h3>
+                        <p class="project-description">Like a hunting hound, this solution tracks down and analyzes user opinions from GitHub repositories. Implemented sentiment analysis to sniff out insights from user comments with the precision of a bloodhound! ð</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python ð</span>
+                            <span class="tech-tag">Scrapy ð·ï¸</span>
+                            <span class="tech-tag">PostgreSQL ð</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span class="link-icon">ð±âð»</span> GitHub
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span class="link-icon">ð</span> Live Demo
+                            </a>
+                        </div>
                     </div>
-                </article>
-                <article class="project-card" tabindex="0" aria-labelledby="project2-title">
-                    <h3 id="project2-title">AI-Powered Job Portal (Java Version) 🐕</h3>
-                    <p>Like a service dog guiding users, this job portal filters and matches skills using Java, Spring Boot, and SQL for recruiter and seeker efficiency.</p>
-                    <p><strong>Tech Used:</strong> Java, Spring Boot, SQL</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank" rel="noopener" aria-label="GitHub Repository for Job Portal project">GitHub</a>
-                        <a href="#" target="_blank" rel="noopener" aria-label="Live Demo for Job Portal project">Live Demo</a>
+                    <div class="paw-decorations">
+                        <div class="paw-corner paw-top-left">ð¾</div>
+                        <div class="paw-corner paw-top-right">ð¾</div>
+                        <div class="paw-corner paw-bottom-left">ð¾</div>
+                        <div class="paw-corner paw-bottom-right">ð¾</div>
                     </div>
-                </article>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">ð±âð»</div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI-Powered Job Portal ð±âð»</h3>
+                        <p class="project-description">Built a job portal platform with the intelligence of a cat and loyalty of a dog. Features smart filtering and skill-matching algorithms that are as accurate as a cat's reflexes! ð¯</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java â</span>
+                            <span class="tech-tag">Spring Boot ð</span>
+                            <span class="tech-tag">SQL ðï¸</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span class="link-icon">ð±âð»</span> GitHub
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span class="link-icon">ð</span> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="paw-decorations">
+                        <div class="paw-corner paw-top-left">ð¾</div>
+                        <div class="paw-corner paw-top-right">ð¾</div>
+                        <div class="paw-corner paw-bottom-left">ð¾</div>
+                        <div class="paw-corner paw-bottom-right">ð¾</div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section experience-section" tabindex="-1" aria-label="Experience Section">
-            <h2>Experience & Certifications 🐾</h2>
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">My Journey ð¾</h2>
+            <p class="section-subtitle">Adventures in the tech world, one paw step at a time! ð</p>
             <div class="experience-timeline">
-                <div class="timeline-item" tabindex="0">
-                    <h3>Intern – Khoj Informational Technology</h3>
-                    <p><strong>Role:</strong> Java Developer Intern</p>
-                    <p><strong>Duration:</strong> Jan 2025 – Apr 2025</p>
-                    <ul>
-                        <li>Built and optimized backend modules using Spring Boot</li>
-                        <li>Worked on SQL queries and APIs</li>
-                        <li>Collaborated in a team on an analytics dashboard</li>
-                    </ul>
+                <div class="experience-item">
+                    <div class="timeline-icon">ðâð¦º</div>
+                    <div class="experience-content">
+                        <h3 class="experience-role">Java Developer Intern ðâð¦º</h3>
+                        <h4 class="experience-company">Khoj Informational Technology</h4>
+                        <p class="experience-duration">Jan 2025 â Apr 2025</p>
+                        <ul class="experience-responsibilities">
+                            <li>ð¦´ Worked like a dedicated service dog on backend modules using Spring Boot</li>
+                            <li>ð¯ Mastered SQL queries and APIs with the precision of a hunting dog</li>
+                            <li>ð¤ Collaborated with my pack on an analytics dashboard</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline-item" tabindex="0">
-                    <h3>Workshops & Hackathons</h3>
-                    <p>Participated in multiple tech workshops & national-level hackathons on AI, Web Development, and Data Analysis.</p>
+                <div class="experience-item">
+                    <div class="timeline-icon">ð</div>
+                    <div class="experience-content">
+                        <h3 class="experience-role">Workshops & Hackathons ð</h3>
+                        <p class="experience-description">Participated in tech workshops & hackathons with the curiosity of a cat and the determination of a dog ð. Topics included AI, Web Development, and Data Analysis - always eager to learn new tricks! ð</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section" tabindex="-1" aria-label="Contact Section">
-            <h2>Contact Me 🐱</h2>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect! ð¾</h2>
+            <p class="section-subtitle">Drop me a line - I promise to respond faster than a cat pouncing on a toy mouse! ð±</p>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>📧 Email: <a href="mailto:arpita.jena123@gmail.com">arpita.jena123@gmail.com</a></p>
-                    <p>💼 LinkedIn: <a href="https://linkedin.com/in/arpita-jena" target="_blank" rel="noopener">linkedin.com/in/arpita-jena</a></p>
-                    <p>💻 GitHub: <a href="https://github.com/arpitajena" target="_blank" rel="noopener">github.com/arpitajena</a></p>
-                    <p>📸 Instagram: <em>(optional)</em></p>
+                    <h3>Get in Touch! ð</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello! I'm always excited to meet fellow tech enthusiasts. ð¤</p>
+                    <div class="social-links">
+                        <a href="mailto:arpita.jena123@gmail.com" class="social-link" aria-label="Email">
+                            <span class="social-icon">ð§</span>
+                            <div class="link-content">
+                                <span class="link-title">Drop me a line!</span>
+                                <span class="link-subtitle">arpita.jena123@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/arpita-jena" class="social-link" target="_blank" aria-label="LinkedIn">
+                            <span class="social-icon">ð</span>
+                            <div class="link-content">
+                                <span class="link-title">Let's connect professionally</span>
+                                <span class="link-subtitle">LinkedIn Profile</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/arpitajena" class="social-link" target="_blank" aria-label="GitHub">
+                            <span class="social-icon">ð±âð»</span>
+                            <div class="link-content">
+                                <span class="link-title">Check out my code den</span>
+                                <span class="link-subtitle">GitHub Repository</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <form id="contact-form" aria-label="Contact Form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" aria-required="true" placeholder="Your name" />
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" aria-required="true" placeholder="Your email" />
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" aria-required="true" placeholder="Write your message"></textarea>
-                    <button type="submit" class="btn-primary">Send Woof! 🐕</button>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name ð·ï¸" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email ð§" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message ð" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">
+                        <span class="btn-text">Send Woof! ð</span>
+                        <span class="btn-alt-text hidden">Send Meow! ð±</span>
+                    </button>
                 </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="footer" role="contentinfo">
-        <p>© 2025 Arpita Jena | Built with 💖 using Java & Spring Boot</p>
-        <div class="footer-socials" aria-label="Social Media Links">
-            <a href="https://github.com/arpitajena" target="_blank" rel="noopener" aria-label="GitHub"><span>🐱 GitHub</span></a>
-            <a href="https://linkedin.com/in/arpita-jena" target="_blank" rel="noopener" aria-label="LinkedIn"><span>🐕 LinkedIn</span></a>
-            <a href="mailto:arpita.jena123@gmail.com" aria-label="Send Email"><span>📧 Email</span></a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <p class="footer-text">Â© 2025 Arpita Jena | Crafted with ð and lots of â</p>
+                    <p class="footer-theme">Powered by Java & Spring Boot ð±âð» | Designed with a Cat & Dog Theme ð¾</p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:arpita.jena123@gmail.com" class="footer-link" aria-label="Email">ð§</a>
+                    <a href="https://linkedin.com/in/arpita-jena" class="footer-link" target="_blank" aria-label="LinkedIn">ð</a>
+                    <a href="https://github.com/arpitajena" class="footer-link" target="_blank" aria-label="GitHub">ð±âð»</a>
+                </div>
+            </div>
         </div>
     </footer>
 
