@@ -1,5 +1,3 @@
-// Smooth scroll for nav links & active link highlight
-
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = [...navLinks].map(link => document.querySelector(link.getAttribute('href')));
@@ -25,16 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Smooth scroll handled by css scroll-behavior, but we update active link on scroll
+  // Highlight active nav link based on scroll position, and sticky navbar bg
   window.addEventListener('scroll', () => {
-    // Sticky navbar background toggle
     if (window.scrollY > 50) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
 
-    // Highlight nav link based on current scroll position
     let currentSectionIndex = sections.findIndex(section => {
       const top = section.offsetTop - navbar.offsetHeight - 20;
       return window.scrollY >= top;
@@ -78,18 +74,17 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', e => {
     e.preventDefault();
 
-    // Basic validation
     let valid = true;
     const requiredFields = ['name', 'email', 'message'];
-    requiredFields.forEach(id => {
+    for (let id of requiredFields) {
       const input = form.querySelector(`#${id}`);
       if (!input.value.trim()) {
         valid = false;
         alert(`Oops! The "${input.previousElementSibling.textContent}" field needs some love 🐱`);
         input.focus();
-        return;
+        break;
       }
-    });
+    }
 
     if (valid) {
       alert('Thanks for reaching out! I\'ll get back to you soon 🐕');
